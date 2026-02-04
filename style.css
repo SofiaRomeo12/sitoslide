@@ -1,0 +1,543 @@
+/*Generale*/
+@font-face {
+  font-family: 'geuli';
+  src: url('fonts/GEULI.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('fonts/Futura-URW-Medium-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tondu';
+  src: url('fonts/Tondu-Beta.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('fonts/Urbanist-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Urbanist-VariableFont_wght.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+html {
+		box-sizing: border-box; /* il comportamento di default è content-box, con border-box, larghezza e altezza includono anche il padding e i bordi, rendendo più intutivo il calcolo delle dimensioni */
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.page div{
+    width: min-content;
+}
+/*Generale*/
+
+
+
+/*Navbar*/
+.main-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4vh 5vw;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.socials img{
+    width: 25px;
+    height: 25px;  
+}
+
+.socials-section-1, .socials-section-2{
+    display: flex;
+    gap: 30px;
+}
+
+.tools{
+    display:flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.tools img{
+    width: 25px;
+    height: 25px;;    
+}
+
+.title p{
+    color:white;
+    font-family: 'geuli', sans-serif;
+    font-size: 100px;
+    margin-top: 20px;
+}
+
+.link-section{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: min(5vw, 30px);
+    font-family: 'Futura';
+    font-size: 16px;
+}
+
+nav .link-section{
+    background-color: #681600;
+    height: 45px;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    padding-left: 110px;
+    font-family: 'Futura';
+}
+
+.link-section div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-section p{
+    font-size: 16px;
+}
+
+.link-section img{
+    width: 32px;
+    height: 32px;
+}
+/*Navbar*/
+
+
+
+/*Pagina 1*/
+.page-title h1{
+    color: white;
+    font-family: 'Tondu';
+    font-size: 37px;
+}
+.subtitle-page{
+    color: #FFD93D;
+    font-family: 'Urbanist';
+    font-size: clamp(18px, 3.5vw, 25px);
+    max-width: 600px;
+    margin: 20px 20px 0 0;
+}
+
+.page-title{
+    margin: 140px 0 0 60px;
+}
+
+.background{
+    margin-top: 85px;
+}
+
+.background img {
+    width: 100%;
+    filter: contrast(1.1);
+}
+/*Pagina 1*/
+
+
+
+/*Pagina 2*/
+.background1{
+    background: url("immagini/dylan_dog_magazine_2020_thumb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 8px;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 1024px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.55) 70%, rgba(0, 0, 0, 0.95) 100%);
+    padding-bottom: 30px;
+}
+.page h2{
+    color: white;
+    font-family: 'Tondu';
+    font-size: 35px;
+    margin-top: 140px;
+}
+.subtitle-section{
+    color: #FFD93D;
+    font-family: 'Futura';
+    font-size: 22px;
+    margin-top: 72px;
+}
+
+.text-section{
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: min(3.5vw, 19px);
+    width: 45vw;
+    margin-top: 2vw;
+    margin-left: 170px;
+}
+/*Pagina 2*/
+
+
+
+/*Pagina 3*/
+.background2{
+    background: url("immagini/dds.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 8px;
+}
+i{
+    color: #FFD93D;
+}
+.note-section{
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 19px;
+    width: 600px;
+    margin-top: 40px;
+}
+/*Pagina 3*/
+
+
+
+/*Pagina 4*/
+.background3{
+    background: url("immagini/x-promo-16x21-LERA-DEI-BONELLIDI-plancia-cover-copia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 8px;
+}
+
+.background3 .page{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.95) 100%);
+}
+/*Pagina 4*/
+
+
+
+/*footer*/
+.footer .title p{
+    font-size: 60px;
+    margin-top: 0;
+}
+
+.footer-page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 72px;
+}
+
+.footer-page section{
+    width: 100%;
+}
+
+.note-footer{
+    font-style: italic;
+    color: #FFD93D;
+    margin: 60px 0 130px 150px;
+    transform: translateX(-80px);
+}
+
+.footer{
+    background-color: #851C00;
+    width: 100%;
+    height: 227px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+.footer .title{
+    margin-bottom: 20px;
+}
+
+.container-socials{
+    background-color: #681600;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright{
+    color: white;
+    padding: 25px;
+    font-family: "Urbanist";
+    font-size: 11px;
+}
+/*footer*/
+
+/*Responsive*/
+@media (min-width: 0px) and (max-width: 560px) {
+    /*Generale*/
+    .text-section {
+        margin-left: 110px;
+        width: 50vw;
+    }
+
+    .subtitle-section{
+        font-size: 17px;
+        margin-top: 65px;
+    }
+    
+    .page h2{
+        font-size: 25px;
+    }
+    /*Generale*/
+
+
+    /*nav*/
+    .socials, .socials-section-1, .socials-section-2{
+        gap: 15px;
+    }
+    .socials img{
+        width: 16px;
+        height: 16px;
+    }
+    .socials-section-1, nav .socials-section-2{
+        flex-direction: column;
+    }
+
+    .tools{
+        gap: 15px;
+    }
+    .tools img{
+        width: 16px;
+        height: 16px;
+    }
+
+    nav .title p{
+        font-size: 50px;
+        margin-top: 10px;
+    }
+
+    nav .link-section{
+        padding-left: 0;
+    }
+
+    nav .link-section p {
+        font-size: 10px;
+    }
+
+    nav .link-section img{
+        width: 20px;
+        height: 20px;
+    }
+    /*nav*/
+
+
+    /*Pagina 1*/
+    .page-title h1{
+        font-size: 30px;
+    }
+    /*Pagina 1*/
+
+
+    /*Pagina 3*/
+    .note-section{
+        margin-left: 40px;
+        width: auto;
+        font-size: 16px;
+    }
+    /*Pagina 3*/
+
+
+    /*Footer*/
+    footer .title p{
+        font-size: 50px;
+    }
+    .footer .link-section{
+        font-size: 11px;
+    }
+    .copyright{
+        font-size: 9px;
+    }
+    .note-footer{
+        margin-left: 110px;
+        width: inherit;
+    }
+    /*Footer*/
+}
+
+@media (min-width: 561px) and (max-width: 751px) {
+    /*Generale*/
+    .text-section {
+        margin-left: 140px;
+        width: 50vw;
+    }
+
+    .subtitle-section{
+        font-size: 19px;
+    }
+    
+    .page h2{
+        font-size: 30px;
+    }
+    /*Generale*/
+
+
+    /*nav*/
+    .socials, .socials-section-1, .socials-section-2{
+        gap: 20px;
+    }
+    .socials img{
+        width: 18px;
+        height: 18px;
+    }
+
+    .tools{
+        gap: 20px;
+    }
+    .tools img{
+        width: 18px;
+        height: 18px;
+    }
+
+    nav .title p{
+        font-size: 65px;
+        margin-top: 13px;
+    }
+
+    nav .link-section{
+        padding-left: 62px;
+    }
+
+    nav .link-section p {
+        font-size: 12px;
+    }
+
+    nav .link-section img{
+        width: 24px;
+        height: 24px;
+    }
+    /*nav*/
+
+
+    /*Pagina 1*/
+    .page-title h1{
+        font-size: 35px;
+    }
+    /*Pagina 1*/
+
+
+    /*Pagina 3*/
+    .note-section{
+        font-size: 18px;
+        width: auto;
+        margin-left: 40px;
+    }
+    /*Pagina 3*/
+
+
+    /*Footer*/
+    footer .title p{
+        font-size: 50px;
+    }
+    footer .link-section{
+        font-size: 13px;
+    }
+    .copyright{
+        font-size: 9px;
+    }
+    .note-footer{
+        margin-left: 130px;
+        width: 400px;
+    }
+    /*Footer*/
+}
+
+@media (min-width: 751px) and (max-width: 970px) {
+    /*Generale*/
+    .subtitle-section{
+        width: 600px;
+    }
+    /*Generale*/
+
+
+    /*nav*/
+    .socials, .socials-section-1, .socials-section-2{
+        gap: 25px;
+    }
+    .socials img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .tools{
+        gap: 25px;
+    }
+    .tools img{
+        width: 20px;
+        height: 20px;
+    }
+
+    nav .title p{
+        font-size: 80px;
+        margin-top: 16px;
+    }
+
+    nav .link-section{
+        padding-left: 90px;
+    }
+
+    nav .link-section p {
+        font-size: 14px;
+    }
+
+    nav .link-section img{
+        width: 28px;
+        height: 28px;
+    }
+    /*nav*/
+
+
+    /*Pagina 3*/
+    .note-section{
+        width: 500px;
+    }
+    /*Pagina 3*/
+}
